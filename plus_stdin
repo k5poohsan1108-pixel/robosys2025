@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-#SPDX-FileCopyrightText: 2025 Keigo Yamaguchi <k5poohsan1108@gmail.com>
 import sys
 
-ans = 0
+ans = 0.0
 for line in sys.stdin:
-    try:
-        ans += int(line)
-    except:
-        ans += float(line)
+    ans += float(line)
 
 print(ans)
 
